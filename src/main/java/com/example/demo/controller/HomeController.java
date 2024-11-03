@@ -15,6 +15,8 @@ public class HomeController {
     @GetMapping("/")
     public String home(Model model, @AuthenticationPrincipal OAuth2User user)
     {
+        //test
+        ///lll
         model.addAttribute("userName",user.getAttribute("name"));
         String userName =  Objects.requireNonNull(model.getAttribute("userName")).toString();
         return "You are logged in as "+ userName;
