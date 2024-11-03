@@ -17,6 +17,7 @@ public class HomeController {
     {
         model.addAttribute("userName",user.getAttribute("name"));
         String userName =  Objects.requireNonNull(model.getAttribute("userName")).toString();
+        System.out.println("Www");
         return "You are logged in as "+ userName;
     }
 
